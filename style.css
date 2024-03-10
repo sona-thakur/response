@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(234, 228, 228);
+    box-sizing: border-box;
+}
+nav{
+    width:100%;
+    height:15vh;
+    background-color:#ffffff;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input{
+    width:47vw;
+    height:7vh;
+    border-radius: 5px;
+    border:none;
+    font-size: larger;
+    background-color:rgb(234, 228, 228);
+    margin-top: 12px;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size: large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+i{ 
+    color:black;
+}
+/* media query of nav */
+@media(max-width:600px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        width:100%;
+        height:40vh;
+        background-color:rgb(209, 229, 249);
+        display:block;
+        flex-wrap: wrap;
+        /* background-image: linear-gradient(rgb(209,229,249,rgb(194, 243, 247))); */
+        position:absolute;
+        top:0%;
+    }
+    .img{
+        position: absolute;
+        left:25px;
+
+    }
+    input{
+        width: 90vw;
+        height: 8vh;
+        border-radius: 4px;
+        border: 1px solid grey;
+        font-size: smaller;
+        background-color: white;
+        margin-top: 20px;
+        position: absolute;
+        top: 35%;
+        left: 19px;
+        /* position: fixed;
+        top:60px;
+        z-index: 1; */
+    }
+    a{
+        visibility: hidden;
+    }
+}
+/* media query nav ended here!...*/
+
+main{
+    width:100%;
+    height:139px;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    overflow-x: hidden;
+
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+/* main media query */
+@media(max-width:600px){
+    main{
+        position:absolute;
+        top:223px;
+        width:100%;
+        height:300px;
+        background-color:#FFFDE7    ;
+        display:flex;
+        flex-wrap: wrap;
+        padding: 3px;
+        margin: 3px;
+    
+    }
+main div img{
+      border-radius: 50%;
+      background-color: rgb(231, 162, 231);
+}
+  div p{
+    color:grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+  }
+
+
+}
+
+.hero{
+    width:100%;
+    height:200px;
+    background-image: url("image/hero.webp");
+    background-size: cover;
+    margin:8px;
+}
+/* media query of hero section */
+@media(max-width:600px){
+    .hero{
+        width: 100%;
+        height: 93px;
+        background-image: url(image/hero.webp);
+        background-size: cover;
+        position: absolute;
+        margin-top: 129px;
+        margin-left: -0px;
+}
+}
+/* slider part */
+    #fourth1{
+        width:100%;
+        height:290px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 20px;
+      }
+      #fourth1 .slider{
+        display:flex;
+      }
+      .slider img{
+        margin:10px;
+      }
+      #fourth2{
+        width:100%;
+        height:290px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 20px;
+      }
+      #fourth2 .slider{
+        display:flex;
+      }
+      .slider img{
+        margin:10px;
+      }
+      #fourth3{
+        width:100%;
+        height:290px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 20px;
+      }
+      #fourth3 .slider{
+        display:flex;
+      }
+      .slider img{
+        margin:10px;
+      }
+@media(max-width:600px){
+
+    #fourth1{
+        position: absolute;
+        top: 515px;
+        background-color:white;
+        width: 100%;
+        height: 290px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 8px;
+      }
+    h2{
+        color:rgb(3, 24, 164);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:15px;
+        border-bottom: 1px solid rgb(225, 216, 216);
+    }
+
+    .slider img{
+        width:20vw;
+        height:15vh;
+        border-radius: 20%;
+        border: 1px solid lightgray;
+        padding:10px;
+        background-color:rgb(222, 238, 243);
+    }
+    #fourth2{
+        position: absolute;
+        top: 630px;
+        background-color:white;
+        width: 100%;
+        height: 290px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 8px;
+      }
+    h2{
+        color:rgb(3, 24, 164);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:15px;
+        border-bottom: 1px solid rgb(225, 217, 217);
+    }
+    
+    .slider img{
+        width:20vw;
+        height:15vh
+    }
+    hr{
+        border-bottom:1 px solid grey;
+    }
+    #fourth3{
+        position: absolute;
+        top: 746px;
+        background-color:white;
+        width: 100%;
+        height: 290px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 8px;
+      }
+    h2{
+        color:rgb(3, 24, 164);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:15px;
+        border-bottom: 1px solid rgb(225, 217, 217);
+    }
+    
+    .slider img{
+        width:20vw;
+        height:15vh
+    }
+    hr{
+        border-bottom:1 px solid grey;
+    }
+
+}
+/* figure media query end */
+footer{
+    width:100%;
+    height:370px;
+    background-color: rgb(10, 10, 10);
+    display:flex;
+    justify-content:space-evenly;
+}
+footer a{
+    color:white;
+    font-size: small;
+    border-bottom:1px solid coral;
+    margin: 50px;
+    opacity:0.5;
+}
+a:hover{
+    border-bottom:1cap solid coral; 
+}
+/* media query of footer */
+@media(max-width:600px){
+    footer{
+        position: absolute;
+        top: 875px;
+        width:100%;
+        height:400px;
+        background-color:rgb(245, 180, 61);
+        display:flex;
+        flex-wrap:wrap;
+      
+    }
+    footer div{
+        margin-top: 40px;
+    }
+    footer a{
+        padding: 20px;
+        color:rgb(2, 2, 2);
+        font-size: 12px;
+        border-bottom:1px solid rgb(23, 23, 22);
+        margin:5px;
+        cursor:arrow;
+        visibility: visible;
+        line-height:2px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+}
+/* media query ended */
+.foot{
+    width:100%;
+    height:40px;
+    background-color: rgb(172, 172, 165);
+    text-align: center;
+ 
+}
+.foot i{
+    color:blue;
+    margin-top:10px;
+    font-size:x-large;
+    
+}
+@media(max-width:600px){
+    .foot{
+        position:absolute;
+        top: 1278px;
+        width:100%;
+        height:40px;
+        background-color: rgb(10, 10, 10);
+        text-align: center;
+     
+    }
+    .foot i{
+        color:red;
+        visibility: visible;
+        border-bottom: 1px solid blue;
+        
+    }
+}
+/* end here flipkart */
